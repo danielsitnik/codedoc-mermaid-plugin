@@ -55,21 +55,26 @@ export const config = /*#__PURE__*/configuration({
 ```
 
 ## Usage
-***
-To render diagrams in your documents, all you need to do is wrap Mermaid's diagram syntax in markdown `block-quote` elements (Codedoc calls them "quoted components") like below:\
+To render diagrams in your documents, all you need to do is wrap Mermaid's diagram syntax in markdown `block-quote` elements (Codedoc calls them "quoted components") like below:
 ```md
 > :Mermaid
 > > graph LR
 > >   Start --> End
 ```
+
+Another way to do it is with just one `>` sign, but you **must** add a blank line below `:Mermaid`:
+```md
+> :Mermaid
+>
+> graph LR
+>   Start --> End
+```
 Refer to the "Diagram Syntax" section of Mermaid's [documentation](https://mermaid-js.github.io) to learn how to use each of the diagrams.
 
 ## Contributing
-***
 If you'd like to contribute to this plugin, here are some ideas for improvements:
 1. Add some styling so the diagrams can be rendered inside some container, similar to the code blocks. 
 2. Find a way to dynamically change the theme when switching between light/dark mode. Right now the `neutral` theme is the one that works best with both modes.
 
 ## License
-***
 [MIT](https://choosealicense.com/licenses/mit/)
