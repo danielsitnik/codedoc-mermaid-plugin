@@ -1,16 +1,13 @@
 # codedoc-mermaid-plugin
-***
 This plugin enables the use of [Mermaid](https://mermaid-js.github.io) diagrams in [Codedoc](https://codedoc.cc) documents.
 
 ## Installation
-***
 Using the Codedoc CLI, run the following command your project's folder:
 ```bash
 $ codedoc install codedoc-mermaid-plugin
 ```
 
 ## Configuration
-***
 To use the plugin, first edit your `config.ts` file like below.
 Make sure you import the plugin at the top of the file, and then add it to the `plugins` section in the `configuration` function.
 
@@ -34,7 +31,7 @@ export const config = /*#__PURE__*/configuration({
 
 ### Customizing Configuration
 Mermaid's configuration can be changed by passing a `MermaidOptions` object to the `mermaidPlugin()` function.
-Basically all of the options described [here](https://mermaid-js.github.io/mermaid/#/Setup) are supported.
+Basically all the options described [here](https://mermaid-js.github.io/mermaid/#/Setup) are supported.
 
 For example, if you wanted to change the theme to `neutral` and to change the spacing between flowchart nodes, you would do this:
 ```ts
@@ -59,14 +56,13 @@ export const config = /*#__PURE__*/configuration({
 
 ## Usage
 ***
-To render diagrams in your documents, refer to the "Diagram Syntax" section in Mermaid's [documentation](https://mermaid-js.github.io).
-
-All you need to do is wrap the diagram syntax in markdown `block-quote` elements (Codedoc calls them "quoted components") like below:
+To render diagrams in your documents, all you need to do is wrap Mermaid's diagram syntax in markdown `block-quote` elements (Codedoc calls them "quoted components") like below:\
 ```md
 > :Mermaid
 > > graph LR
 > >   Start --> End
 ```
+Refer to the "Diagram Syntax" section of Mermaid's [documentation](https://mermaid-js.github.io) to learn how to use each of the diagrams.
 
 ## Contributing
 ***
