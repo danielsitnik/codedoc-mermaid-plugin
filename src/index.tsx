@@ -100,7 +100,6 @@ export interface PieChartOptions {
 
 export interface RequirementDiagramOptions {
     useMaxWidth?: boolean,
-
 }
 
 export interface MermaidOptions {

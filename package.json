@@ -38,8 +38,6 @@
   },
   "devDependencies": {
     "@codedoc/core": "^0.2.24",
-    "@connectv/html": "^0.2.6",
-    "@connectv/jss-theme": "^0.2.0",
     "typescript": "^3.9.10"
   }
 }
