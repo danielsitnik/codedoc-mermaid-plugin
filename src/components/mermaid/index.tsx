@@ -11,5 +11,5 @@ export function Mermaid(
     const marker = <div>{content}</div>;
     const diagram = (marker.textContent || '').trim();
 
-    return <div class="mermaid">{diagram}</div>;
+    return <div class={`mermaid`}>{diagram}</div>;
 }
