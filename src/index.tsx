@@ -32,7 +32,7 @@ export interface SequenceDiagramOptions {
     bottomMarginAdj?: number,
     useMaxWidth?: boolean,
     rightAngles?: boolean,
-    showSequencenumbers?: number,
+    showSequenceNumbers?: number,
     actorFontSize?: number,
     actorFontFamily?: string,
     actorFontWeight?: number,
@@ -130,7 +130,7 @@ export function mermaidPlugin(config?: MermaidOptions) {
             },
             page: {
                 scripts: [
-                    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.11.2/dist/mermaid.core.min.js"/>,
+                    <script src={`https://cdn.jsdelivr.net/npm/mermaid@8.11.2/dist/mermaid.min.js`}/>,
                     <script>
                         {`mermaid.initialize(${JSON.stringify(options)});
                         window.addEventListener('navigation', () => { mermaid.init(); });
