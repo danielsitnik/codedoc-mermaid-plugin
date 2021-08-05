@@ -2,7 +2,7 @@
 This plugin enables the use of [Mermaid](https://mermaid-js.github.io) diagrams in [Codedoc](https://codedoc.cc) documents.
 
 ## Installation
-Using the Codedoc CLI, run the following command your project's folder:
+Using the Codedoc CLI, run the following command inside your project's folder:
 ```bash
 $ codedoc install codedoc-mermaid-plugin
 ```
